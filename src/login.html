@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="welcome"></h1>
+    <div id="welcomeMessage"></div>
+    <button id="btn-en">English</button>
+    <button id="btn-kz">Қазақша</button>
+    <div class="row">
+      <div class="col-md-12">
+        <form action="index.html" method="post">
+          <h1>Login</h1>
+          <fieldset>
+            <label for="name">Login:</label>
+            <input type="text" id="name" name="user_name" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password" />
+          </fieldset>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- TypeScript файлын қосу -->
+    <script type="module" src="./TS/signup.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+
+.overlay-navigation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.overlay-navigation nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.overlay-navigation li {
+  margin: 20px 0;
+}
+
+.overlay-navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.home {
+  position: relative;
+}
+
+.open-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.open-overlay span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+.open-overlay span.bar-top {
+  transition: 0.3s;
+}
+
+.open-overlay span.bar-middle {
+  transition: 0.3s;
+}
+
+.open-overlay span.bar-bottom {
+  transition: 0.3s;
+}
+
+.open-overlay.open span.bar-top {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.open-overlay.open span.bar-middle {
+  opacity: 0;
+}
+
+.open-overlay.open span.bar-bottom {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
+}
